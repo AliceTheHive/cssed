@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 
-import urllib.parse
-
 def hex_at(string, index, mode):
     if (mode == 0):
         r = string[index:2]
     else:
-        r = string[int(index-2):index]
+        r = string[index-2:index]
     return int(r, 16)
 
 def decrypt(ciphertext):
